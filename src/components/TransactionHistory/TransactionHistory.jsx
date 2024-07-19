@@ -14,7 +14,7 @@ function TransactionHistory({ items }) {
           return (
             <tr
               key={item.id}
-              style={{ backgroundColor: i % 2 === 0 ? "white" : "grey" }}
+              style={{ backgroundColor: i % 2 !== 0 && "grey" }}
             >
               <td>{item.type}</td>
               <td>{item.amount}</td>
