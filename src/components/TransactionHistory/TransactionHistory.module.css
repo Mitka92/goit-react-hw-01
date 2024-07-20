@@ -1,0 +1,32 @@
+.table {
+  font-size: 18px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 600px;
+  margin: 0 auto;
+}
+.table-head {
+  color: white;
+  background-color: rgba(3, 2, 2, 0.8);
+}
+.table th {
+  border: 2px solid black;
+}
+.table td {
+  border: 2px solid black;
+  text-align: left;
+  text-transform: capitalize;
+  padding-left: 64px;
+}
+.table tr:nth-child(even) {
+  background-color: rgba(136, 135, 135, 0.5);
+}
+@media (max-width: 768px) {
+  .table {
+    width: 280px;
+    font-size: 14px;
+  }
+  .table td {
+    padding-left: 20px;
+  }
+}

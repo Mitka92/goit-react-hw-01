@@ -1,7 +1,21 @@
 .friends-list {
   display: flex;
   flex-direction: row;
-  margin-top: 30px;
+  flex-wrap: wrap;
   gap: 10px;
-  justify-content: space-between;
+  justify-content: flex-start;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.friend-item {
+  border: 1px solid black;
+  width: calc((100% - 40px) / 5);
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px;
+}
+@media (max-width: 768px) {
+  .friend-item {
+    padding: 2px;
+  }
 }
